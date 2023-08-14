@@ -7,7 +7,6 @@ export const client = new Sequelize({
   dialect: 'sqlite',
   storage: process.env.DB_PATH ?? './db.sqlite',
   logging: dev ? true : false,
-  sync: dev ? { force: true } : { force: false, alter: false },
 });
 
 const Item = ItemModel(client);
@@ -15,6 +14,8 @@ const Item = ItemModel(client);
 export const models = {
   Item,
 };
+
+client.sync(dev ? { force: true } : { force: false, alter: false });
 
 export default client;
 export * from './errors';
