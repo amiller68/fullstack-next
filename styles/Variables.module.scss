@@ -1,0 +1,30 @@
+/* Variables.module.scss */
+// Path: styles/Variables.module.scss
+// Set root variables for styled components in this repository here
+
+:root {
+  /* Color Variables */
+
+  // Background Colors
+  --main-background: rgb(255, 255, 255);
+  --main-background-foreground: rgb(131, 125, 125);
+  --main-background-accent: #837d7d;
+
+  // Text Colors
+  --main-text: #000000;
+  --main-text-details: #ffffff;
+
+  // Border Colors
+  --main-border-input: rgba(0, 0, 0, 0.4);
+  --main-border: rgba(0, 0, 0, 0.2);
+
+  // Button Colors
+  --main-button-background: #3f71d0;
+  --main-button-text: #ffffff;
+  --main-button-background-secondary: rgba(0, 0, 0, 1);
+  --main-button-text-secondary: #ffffff;
+
+  // Status Colors
+  --status-success: #46c34c;
+  --status-error: #cb1b3f;
+}

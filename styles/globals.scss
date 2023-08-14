@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Globals.scss */
+// Path: styles/globals.scss
+// Set global styles and mixins for styled components in this repository here
+// Use Tailwind :)
+
+// Import Variable and App modules
+@import 'App.module.scss';
+@import 'Variables.module.scss';
+
+// Root Styling
+:root {
+  /* Text Configuration */
+
+  // Set background color
+  background: var(--main-background);
+  // Set font
+  font-family: 'Mono', serif; //  -apple-system, BlinkMacSystemFont, helvetica neue, helvetica, sans-serif;
+  // Set font color
+  color: var(--main-text);
+  // Set font size
+  font-size: 20px;
+
+  /* Media Query Controls */
+
+  @media (max-width: 1880px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 1248px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
+
+  /* Hide Scrollbars */
+
+  // This does it for Chrome and Safari
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  // This does it for Firefox
+  scrollbar-width: none;
+}

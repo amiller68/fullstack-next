@@ -1,0 +1,177 @@
+/* App.modules.scss */
+// Path: styles/App.module.scss
+// Use this module to set high level Application styles
+
+/* Item Styling  - Various element styling directives */
+
+// Style for our text based logo
+.logo {
+  transition: 200ms ease all;
+  transition-property: color, opacity;
+  color: var(--main-text);
+  font-weight: 600;
+  font-size: 4vh;
+}
+
+// Style for our text based items
+.item {
+  cursor: pointer;
+  transition: 200ms ease all;
+  font-weight: 600;
+  font-size: 3vh;
+  color: var(--main-text);
+
+  &:hover {
+    font-style: italic;
+  }
+}
+
+// How we style our links
+.link {
+  cursor: pointer;
+  transition: 200ms ease all;
+  color: var(--main-text);
+  text-decoration: none;
+
+  &:hover {
+    font-style: italic;
+  }
+}
+
+// What image to look like
+.image {
+  flex-shrink: 0;
+  max-width: 488px;
+  width: 100%;
+
+  @media (max-width: 920px) {
+    max-width: 320px;
+    display: block;
+  }
+}
+
+/* Positioning - Various positioning directives */
+
+.row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 128px 24px 24px 24px;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto 0 auto;
+
+  @media (max-width: 920px) {
+    padding: 88px 24px 24px 24px;
+    display: block;
+  }
+}
+
+.subrow {
+  max-width: 1024px;
+  padding: 0 12px 0 12px;
+  margin: 96px auto 48px auto;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  @media (max-width: 920px) {
+    display: block;
+  }
+}
+
+.formAside {
+  margin-top: 8px;
+  color: #8d8d8d;
+  line-height: 1.5;
+  font-size: 0.8rem;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  max-width: 420px;
+}
+
+.group {
+  padding: 8px 16px 24px 16px;
+  margin: 0 auto 0 auto;
+  max-width: 1664px;
+}
+
+.empty {
+  padding: 8px 14px 8px 14px;
+  display: block;
+  width: 100%;
+  font-size: 0.85em;
+  margin: 2px;
+  background: var(--main-background-table);
+  color: var(--main-background-table-text-color);
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.left {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 16px;
+}
+
+.center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  padding-right: 12px;
+}
+
+/* Typography and Text Layout - Various text layout directives */
+
+.block {
+  width: 25%;
+  margin-bottom: 48px;
+  padding: 0 12px 0 12px;
+
+  @media (max-width: 920px) {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+.titleSection {
+  padding: 8px 8px 8px 14px;
+  margin: 2px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.blockTitle {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.blockParagraph {
+  margin-top: 8px;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
