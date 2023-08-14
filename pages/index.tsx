@@ -35,6 +35,7 @@ const Index: NextPageWithLayout = ({}) => {
             className={'border rounded p-2'}
             type={'text'}
             placeholder={'Item Name'}
+            value={name} // bind `name` to `value` prop so input clears on click  
             onChange={(e) => {
               setName(e.target.value);
             }}
